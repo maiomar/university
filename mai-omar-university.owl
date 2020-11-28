@@ -210,6 +210,37 @@
     
 
 
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#job_title -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#job_title">
+        <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#EmployementHistory"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Dean</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Lecturer</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Principal</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#label -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#label">
@@ -530,6 +561,8 @@
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#acadimic_staff"/>
         <owl:sameAs rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Bassel_Alkhatib"/>
         <owl:sameAs rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#MWS_Dean"/>
+        <mai-omar-university:hadEmployed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work"/>
+        <mai-omar-university:hadEmployed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work2"/>
         <mai-omar-university:Academic_degree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhD</mai-omar-university:Academic_degree>
         <mai-omar-university:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkhatib</mai-omar-university:firstName>
         <mai-omar-university:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bassel</mai-omar-university:firstName>
@@ -667,6 +700,8 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Khalil_Ajami">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Principal"/>
+        <mai-omar-university:hadEmployed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#khalil_ajami_work1"/>
+        <mai-omar-university:hadEmployed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#khalil_ajami_work2"/>
         <mai-omar-university:Academic_degree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhD</mai-omar-university:Academic_degree>
         <mai-omar-university:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khalil</mai-omar-university:firstName>
         <mai-omar-university:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ajami</mai-omar-university:lastName>
@@ -727,12 +762,6 @@
     
 
 
-    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_In_Quality -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_In_Quality"/>
-    
-
-
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_in_Applied_Linguistics -->
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_in_Applied_Linguistics">
@@ -757,18 +786,6 @@
     
 
 
-    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_in_Technology_Management -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_in_Technology_Management"/>
-    
-
-
-    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_in_Web_Technology -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Master_in_Web_Technology"/>
-    
-
-
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Mohamad_Aljnidi -->
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Mohamad_Aljnidi">
@@ -787,12 +804,6 @@
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#PHD_in_Administration">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Program"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#PHD_in_IT -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#PHD_in_IT"/>
     
 
 
@@ -838,6 +849,53 @@
         <mai-omar-university:established rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1958-01-01T00:00:00</mai-omar-university:established>
         <mai-omar-university:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Aleppo</mai-omar-university:label>
         <mai-omar-university:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public_university</mai-omar-university:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#EmployementHistory"/>
+        <mai-omar-university:employed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Syrian_Virtual_University"/>
+        <mai-omar-university:endWork rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-08-09T00:00:00</mai-omar-university:endWork>
+        <mai-omar-university:job_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lecturer</mai-omar-university:job_title>
+        <mai-omar-university:startWork rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-08T00:00:00</mai-omar-university:startWork>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work2">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#EmployementHistory"/>
+        <mai-omar-university:employed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Syrian_Virtual_University"/>
+        <mai-omar-university:endWork rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-12-31T00:00:00</mai-omar-university:endWork>
+        <mai-omar-university:job_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Principal</mai-omar-university:job_title>
+        <mai-omar-university:startWork rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-01-01T00:00:00</mai-omar-university:startWork>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#khalil_ajami_work1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#khalil_ajami_work1">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#EmployementHistory"/>
+        <mai-omar-university:employed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Syrian_Virtual_University"/>
+        <mai-omar-university:endWork rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-01-01T00:00:00</mai-omar-university:endWork>
+        <mai-omar-university:job_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lecturer</mai-omar-university:job_title>
+        <mai-omar-university:startWork rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-01T00:00:00</mai-omar-university:startWork>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#khalil_ajami_work2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#khalil_ajami_work2">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#EmployementHistory"/>
+        <mai-omar-university:employed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Syrian_Virtual_University"/>
+        <mai-omar-university:job_title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Principal</mai-omar-university:job_title>
+        <mai-omar-university:startWork rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-02-01T00:00:00</mai-omar-university:startWork>
     </owl:NamedIndividual>
 </rdf:RDF>
 
