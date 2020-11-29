@@ -177,7 +177,7 @@
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#endWork -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#endWork">
-        <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#acadimic_staff"/>
+        <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#EmployementHistory"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -281,7 +281,7 @@
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#startWork -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#startWork">
-        <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#acadimic_staff"/>
+        <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#EmployementHistory"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
