@@ -564,8 +564,8 @@
         <mai-omar-university:hadEmployed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work"/>
         <mai-omar-university:hadEmployed rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#basel_work2"/>
         <mai-omar-university:Academic_degree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhD</mai-omar-university:Academic_degree>
-        <mai-omar-university:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkhatib</mai-omar-university:firstName>
         <mai-omar-university:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bassel</mai-omar-university:firstName>
+        <mai-omar-university:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkhatib</mai-omar-university:lastName>
         <mai-omar-university:mbox rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t_balkhatib@svuonline.org</mai-omar-university:mbox>
         <mai-omar-university:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mai-omar-university:staffID>
     </owl:NamedIndividual>
