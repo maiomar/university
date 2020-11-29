@@ -22,6 +22,24 @@
     
 
 
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#collegeUniversity -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#collegeUniversity">
+        <owl:inverseOf rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#containFaculties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Faculty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#collegeUniversity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#University"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#University"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#containCourses -->
 
     <owl:ObjectProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#containCourses">
@@ -669,6 +687,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information-Technology-and-Communications-College">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Faculty"/>
+        <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information_Technology_Engineering"/>
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#MWS"/>
     </owl:NamedIndividual>
     
@@ -716,6 +735,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#MHD_Saeed_Abou_Trab">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Lecturer"/>
         <mai-omar-university:teach rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#AWE"/>
+        <mai-omar-university:teach rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Software_Engineering"/>
         <mai-omar-university:Academic_degree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhD</mai-omar-university:Academic_degree>
         <mai-omar-university:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abou Trab</mai-omar-university:lastName>
         <mai-omar-university:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHD Saeed</mai-omar-university:lastName>
