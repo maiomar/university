@@ -832,6 +832,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Syrian_Virtual_University">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#University"/>
+        <mai-omar-university:containFaculties rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Faculty_of_Management_Sciences"/>
         <mai-omar-university:containFaculties rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information-Technology-and-Communications-College"/>
         <mai-omar-university:country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syria</mai-omar-university:country>
         <mai-omar-university:established rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-05-08T00:00:00</mai-omar-university:established>
