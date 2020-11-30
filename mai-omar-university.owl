@@ -70,8 +70,25 @@
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#dean -->
 
     <owl:ObjectProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#dean">
+        <owl:inverseOf rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#deanOfFaculty"/>
         <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Faculty"/>
         <rdfs:range rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Dean"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#deanOfFaculty -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#deanOfFaculty">
+        <rdfs:domain rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Dean"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#deanOfFaculty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Dean"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Faculty"/>
     </owl:ObjectProperty>
     
 
@@ -379,7 +396,6 @@
 
     <owl:Class rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Dean">
         <rdfs:subClassOf rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#acadimic_staff"/>
-        <rdfs:comment>http://dbpedia.org/page/Dean_(education)</rdfs:comment>
     </owl:Class>
     
 
@@ -689,6 +705,7 @@
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Faculty"/>
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information_Technology_Engineering"/>
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#MWS"/>
+        <mai-omar-university:dean rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#MWS_Dean"/>
     </owl:NamedIndividual>
     
 
@@ -761,7 +778,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#MWS_Dean">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Dean"/>
-        <mai-omar-university:dean rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information-Technology-and-Communications-College"/>
+        <mai-omar-university:deanOfFaculty rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information-Technology-and-Communications-College"/>
     </owl:NamedIndividual>
     
 
