@@ -585,6 +585,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#AWP">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Course"/>
+        <mai-omar-university:teachedByLecturer rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Khaled_Omar"/>
         <mai-omar-university:teachedByLecturer rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Mohamad_Aljnidi"/>
         <mai-omar-university:dollarPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</mai-omar-university:dollarPrice>
         <mai-omar-university:euroPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</mai-omar-university:euroPrice>
@@ -847,6 +848,56 @@
     
 
 
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Communications_Skills_and_Technical_Writing -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Communications_Skills_and_Technical_Writing">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Course"/>
+        <mai-omar-university:euroPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</mai-omar-university:euroPrice>
+        <mai-omar-university:syrianPoundPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</mai-omar-university:syrianPoundPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Computer_Skills-ICDL -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Computer_Skills-ICDL">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Course"/>
+        <mai-omar-university:euroPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</mai-omar-university:euroPrice>
+        <mai-omar-university:syrianPoundPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</mai-omar-university:syrianPoundPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_English_Language_I -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_English_Language_I">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Course"/>
+        <mai-omar-university:euroPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</mai-omar-university:euroPrice>
+        <mai-omar-university:syrianPoundPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</mai-omar-university:syrianPoundPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Fundamentals_of_Management -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Fundamentals_of_Management">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Course"/>
+        <mai-omar-university:euroPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</mai-omar-university:euroPrice>
+        <mai-omar-university:syrianPoundPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</mai-omar-university:syrianPoundPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Linear_Algebra -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Linear_Algebra">
+        <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Course"/>
+        <mai-omar-university:euroPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</mai-omar-university:euroPrice>
+        <mai-omar-university:syrianPoundPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</mai-omar-university:syrianPoundPrice>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Program -->
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Program">
@@ -874,6 +925,7 @@
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#BAIT_Program"/>
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#BIS_Program"/>
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Program"/>
+        <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information_Technology_Engineering"/>
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#MWS"/>
         <mai-omar-university:containPrograms rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#PHD_in_IT_Program"/>
     </owl:NamedIndividual>
@@ -884,6 +936,11 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Information_Technology_Engineering">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Program"/>
+        <mai-omar-university:containCourses rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Communications_Skills_and_Technical_Writing"/>
+        <mai-omar-university:containCourses rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Computer_Skills-ICDL"/>
+        <mai-omar-university:containCourses rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_English_Language_I"/>
+        <mai-omar-university:containCourses rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Fundamentals_of_Management"/>
+        <mai-omar-university:containCourses rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ITE_Linear_Algebra"/>
         <mai-omar-university:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Technology Engineering</mai-omar-university:label>
     </owl:NamedIndividual>
     
@@ -906,6 +963,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Khaled_Omar">
         <rdf:type rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#Lecturer"/>
         <mai-omar-university:teach rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#ADP"/>
+        <mai-omar-university:teach rdf:resource="https://github.com/maiomar/university/blob/main/mai-omar-university.owl#AWP"/>
         <mai-omar-university:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khaled</mai-omar-university:firstName>
         <mai-omar-university:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Omar</mai-omar-university:lastName>
         <mai-omar-university:mbox rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t_komar@svuonline.org</mai-omar-university:mbox>
